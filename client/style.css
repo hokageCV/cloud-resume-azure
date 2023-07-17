@@ -1,0 +1,74 @@
+:root {
+    --background: #4c566a;
+    --night4: #2e3440;
+    --snow1: #eceff4;
+    --snow2: #e5e9f0;
+    --frost3: #88c0d0;
+    --socialsBG: #3b4251;
+}
+html {
+    background: var(--background);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* ================================================= */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--snow2);
+}
+
+main {
+    margin-top: 100px;
+}
+
+/* ================================================= */
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px;
+}
+#counter-line {
+    font-size: 15px;
+    text-align: center;
+}
+#counter {
+    color: var(--frost3);
+}
+
+/* ================================================= */
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    background-color: var(--socialsBG);
+    margin: 30px;
+    padding: 30px;
+    border-radius: 10px;
+
+    /* https://cssgenerator.org/box-shadow-css-generator.html */
+    box-shadow: 7px 8px 19px 5px rgba(0, 0, 0, 0.64);
+    -webkit-box-shadow: 7px 8px 19px 5px rgba(0, 0, 0, 0.64);
+    -moz-box-shadow: 7px 8px 19px 5px rgba(0, 0, 0, 0.64);
+}
+.socials li {
+    list-style: none;
+}
+
+.socials i {
+    color: var(--snow1);
+    font-size: 40px;
+}
