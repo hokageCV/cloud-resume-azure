@@ -1,17 +1,18 @@
 :root {
-    --background: #4c566a;
-    --night4: #2e3440;
-    --snow1: #eceff4;
-    --snow2: #e5e9f0;
-    --frost3: #88c0d0;
-    --socialsBG: #3b4251;
+    --text: #2e3440;
+    --iconsBG: #eceff4;
+    --textHighlight: #3295a9;
+    --socialsBG: #c95f4a;
+    --box-shadow-color: #893b2b;
+    --gradient-1: #ecc9fd;
+    --gradient-2: #ecf2de;
 }
 html {
-    background: var(--background);
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 /* ================================================= */
@@ -19,14 +20,22 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 
-    color: var(--snow2);
+    /* https://cssgradient.io  */
+    background: var(--gradient-1);
+    background: linear-gradient(129deg, var(--gradient-1) 36%, var(--gradient-2) 84%);
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+
+    color: var(--text);
+    text-align: center;
 }
 
 main {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 /* ================================================= */
@@ -38,14 +47,10 @@ h1 {
     padding: 0px;
 
     white-space: pre-wrap;
-    text-align: center;
 }
-#counter-line {
-    font-size: 18px;
-    text-align: center;
-}
+
 #counter {
-    color: var(--frost3);
+    color: var(--textHighlight);
 }
 
 /* ================================================= */
@@ -58,20 +63,34 @@ h1 {
     gap: 20px;
 
     background-color: var(--socialsBG);
+
     margin: 30px;
     padding: 30px;
     border-radius: 10px;
 
-    /* https://cssgenerator.org/box-shadow-css-generator.html */
-    box-shadow: 7px 8px 19px 5px rgba(0, 0, 0, 0.64);
-    -webkit-box-shadow: 7px 8px 19px 5px rgba(0, 0, 0, 0.64);
-    -moz-box-shadow: 7px 8px 19px 5px rgba(0, 0, 0, 0.64);
+    box-shadow: 5px 8px 16px 5px rgba(0, 0, 0, 0.64);
+    -webkit-box-shadow: 5px 8px 16px 5px rgba(0, 0, 0, 0.64);
+    -moz-box-shadow: 5px 8px 16px 5px rgba(0, 0, 0, 0.64);
+    box-shadow: 5px 8px 16px 5px var(--box-shadow-color);
 }
 .socials li {
     list-style: none;
 }
 
 .socials i {
-    color: var(--snow1);
+    color: var(--iconsBG);
     font-size: 40px;
 }
+
+/* ================================================= */
+.blog {
+    color: var(--text);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+a {
+    color: var(--textHighlight);
+}
+/* ================================================= */
