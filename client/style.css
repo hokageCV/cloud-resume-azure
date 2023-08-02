@@ -36,6 +36,9 @@ h1 {
     font-weight: 700;
     margin: 0px;
     padding: 0px;
+
+    white-space: pre-wrap;
+    text-align: center;
 }
 #counter-line {
     font-size: 18px;
