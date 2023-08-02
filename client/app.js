@@ -1,19 +1,21 @@
-const functionApiUrl = "";
+const functionApiUrl = "https://cloud-resume-function.azurewebsites.net/api/HttpTrigger-cloudResume?code=E9wNT6rBtqjejdDrdBAIlpNbPY0HQ9JD5THt75FHdVkkAzFuDdX7SQ==";
 
 window.addEventListener("DOMContentLoaded", (e) => {
     getCount();
 });
 
 function getCount() {
-    let count = 0;
+    let visitorCount;
 
     fetch(functionApiUrl)
-        .then((response) => response.json())
+        .then((response) => {
+            return response.json()
+        })
         .then((data) => {
-            count = data.count;
-            document.getElementById("counter").textContent = count;
+            visitorCount = data.visitorCount;
+            document.getElementById("counter").textContent = visitorCount;
         })
         .catch((error) => console.error("somethings wrong I can feel it :", error));
 
-    return count;
+    return visitorCount;
 }

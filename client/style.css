@@ -8,7 +8,7 @@
 }
 html {
     background: var(--background);
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     padding: 0px;
     margin: 0px;
@@ -38,7 +38,7 @@ h1 {
     padding: 0px;
 }
 #counter-line {
-    font-size: 15px;
+    font-size: 18px;
     text-align: center;
 }
 #counter {
