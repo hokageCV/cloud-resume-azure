@@ -22,8 +22,10 @@ html {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     box-sizing: border-box;
-    width: 100%;
+    width: auto;
     height: 100%;
+    min-height: 100%;
+    max-width: 100%;
     scroll-behavior: smooth;
 
     /* https://cssgradient.io  */
