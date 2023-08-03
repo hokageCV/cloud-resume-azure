@@ -60,8 +60,15 @@ h1 {
     white-space: pre-wrap;
 }
 
+#counter-line {
+    margin: 10px 0px;
+    font-size: 22px;
+}
+
 #counter {
     color: var(--textHighlight);
+    margin: 0;
+    padding: 0;
 }
 
 /* ================================================= */
@@ -120,3 +127,31 @@ a {
     color: var(--textHighlight);
 }
 /* ================================================= */
+
+.lds-dual-ring {
+    display: inline-block;
+    font-size: 20px;
+    width: 12px;
+    height: 12px;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+.lds-dual-ring:after {
+    content: ' ';
+    display: block;
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+    border: 3px solid var(--textHighlight);
+    border-color: var(--textHighlight) transparent var(--textHighlight) transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
