@@ -33,7 +33,7 @@ body {
     /* https://cssgradient.io  */
     background: var(--gradient-1);
     background: linear-gradient(129deg, var(--gradient-1) 36%, var(--gradient-2) 84%);
-    height: 100vh;
+    min-height: 100vh;
 
     color: var(--text);
     text-align: center;
