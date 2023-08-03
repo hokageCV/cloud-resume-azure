@@ -41,6 +41,9 @@ body {
 
     color: var(--text);
     text-align: center;
+
+    height: 100%;
+    width: 100%;
 }
 
 main {
